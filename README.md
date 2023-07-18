@@ -1,24 +1,56 @@
-# README
+# Recette
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web App sur lequelle il est possible de:
+- crée une Recette
+- modifier une Recette
+- supprimer une Recette
+- lire une Recette
 
-Things you may want to cover:
+Réalisée à l'aide de Ruby on Rails 
+----------------------------------------------------------------------------------------------
+##  Création de base de données
 
-* Ruby version
+```bash
+  rails g scaffold post titre:string ingredients:text
+```
 
-* System dependencies
+------------------------------------------------------------------------------------------------
+##  Création du back
 
-* Configuration
+```bash
+ rails new react-crud-video
+```
+------------------------------------------------------------------------------------------------
+##  Création du front
 
-* Database creation
+```bash
+  npx react-crud-rails frontend --template redux-typescript
+```
+------------------------------------------------------------------------------------------------
+## Déploiement
 
-* Database initialization
+Pour déployer ce projet, exécutez
 
-* How to run the test suite
+Avoir aux préalables rails d'installer
 
-* Services (job queues, cache servers, search engines, etc.)
+pour le back:
+```bash
+  rails s
+```
+Pour le front:
+```bash
+  cd frontend
+```
+Pour les depandances:
+```bash
+  npm i  
+```
+```bash
+  npm run start
+```
+---------------------------------------------------------------------------------------------------
+## Tech Stack
 
-* Deployment instructions
+**Client:** React, Redux, Typescript
 
-* ...
+**Server:** Rails
